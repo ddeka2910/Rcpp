@@ -1,6 +1,6 @@
  sudo: true
  
- dist: focal
+ dist: xenial
  arch:
    - amd64
    - ppc64le
