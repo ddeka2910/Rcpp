@@ -6,7 +6,7 @@
    - ppc64le
  language: r
  r:
-  - 3.6
+  - 3.4
  
  script:
   - R -e 'install.packages("Rcpp")'
