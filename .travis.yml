@@ -6,9 +6,7 @@
    - ppc64le
  language: r
  
- addons:
-   apt:
-     packages:       
-       - r-base
+ 
  script:
+  - sudo apt-get inistall r-base
   - R -e 'install.packages("Rcpp")'
