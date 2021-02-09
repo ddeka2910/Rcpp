@@ -8,8 +8,7 @@
  
  addons:
    apt:
-     packages:
-       - libxml2-dev
+     packages:       
        - r-base
  script:
   - R -e 'install.packages("Rcpp")'
