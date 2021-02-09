@@ -8,5 +8,5 @@
  
  
  script:
-  - sudo apt-get inistall r-base
+  - sudo apt-get install r-base
   - R -e 'install.packages("Rcpp")'
