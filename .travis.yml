@@ -9,4 +9,9 @@
   - 4.0
  
  script:
+  - sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+  - sudo add-apt-repository -y "ppa:marutter/rrutter4.0"
+  - sudo add-apt-repository -y "ppa:c2d4u.team/c2d4u4.0+"
+  - sudo apt-get update -qq
+  - sudo apt-get install -y --no-install-recommends r-base-dev r-recommended qpdf devscripts r-cran-bspm r-cran-remotes
   - R -e 'install.packages("Rcpp")'
