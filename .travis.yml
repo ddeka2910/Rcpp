@@ -1,0 +1,15 @@
+ sudo: true
+ 
+ dist: xenial
+ arch:
+   - amd64
+   - ppc64le
+ language: r
+ 
+ addons:
+   apt:
+     packages:
+       - libxml2-dev
+       - r-base
+ script:
+  - R -e 'install.packages("Rcpp")'
